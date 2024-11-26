@@ -1,5 +1,8 @@
 import streamlit as st
 from PIL import Image
+import torch
+from torchvision import transforms
+import matplotlib as plt
 from detection import *
 
 def main():
