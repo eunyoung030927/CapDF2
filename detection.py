@@ -4,10 +4,6 @@ from PIL import Image
 import matplotlib as plt
 import os
 
-base_path = os.path.dirname(os.path.abspath(__file__))  # 현재 파일의 절대 경로
-self.model_path = os.path.join(base_path, "results", "ResNet2_test.pt")
-
-
 class Detection:
     def __init__(self):
         base_path = os.path.dirname(os.path.abspath(__file__))  # 현재 파일의 절대 경로
