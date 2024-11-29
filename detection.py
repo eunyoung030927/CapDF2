@@ -5,7 +5,7 @@ import matplotlib as plt
 
 class Detection:
     def __init__(self):
-        self.model_path = r".\results\ResNet2_test.pt"
+        self.model_path = r"results\ResNet2_test.pt"
         self.DEVICE = "cuda" if torch.cuda.is_available() else "cpu"
         self.transform = transforms.Compose([
             transforms.Lambda(lambda x: x.convert('RGB')),
