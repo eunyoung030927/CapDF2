@@ -1,7 +1,7 @@
 import torch
 from torchvision import transforms
 from PIL import Image
-import matplotlib as plt
+import matplotlib.pyplot as plt
 import os
 
 class Detection:
