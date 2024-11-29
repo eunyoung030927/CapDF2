@@ -1,0 +1,7 @@
+streamlit==1.39.0
+torch==2.4.0
+torchvision==0.19.0
+pillow
+matplotlib==3.9.2
+numpy
+pandas
