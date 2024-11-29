@@ -3,7 +3,7 @@ from PIL import Image
 from detection import *
 
 def main():
-    st.set_page_config(page_title="딥페이크 탐지 시스템", page_icon="🕵️") # layout="wide"
+    st.set_page_config(page_title="Veripic: 딥페이크 탐지 시스템", page_icon="🕵️") # layout="wide"
 
     st.markdown("""
         <style>
@@ -14,7 +14,7 @@ def main():
         </style>
     """, unsafe_allow_html=True)
 
-    st.header("🕵️‍♀️ 딥페이크 탐지 시스템")
+    st.header("🕵️‍♀️ Veripic: 딥페이크 탐지 시스템")
     st.markdown("### 이미지를 업로드하여 딥페이크 여부를 확인해보세요!")
 
     img_file = st.file_uploader('탐지를 원하는 이미지를 업로드하세요.', type=['png','jpg','jpeg'])
