@@ -2,10 +2,17 @@ import torch
 from torchvision import transforms
 from PIL import Image
 import matplotlib as plt
+import os
+
+base_path = os.path.dirname(os.path.abspath(__file__))  # 현재 파일의 절대 경로
+self.model_path = os.path.join(base_path, "results", "ResNet2_test.pt")
+
 
 class Detection:
     def __init__(self):
-        self.model_path = r"results\ResNet2_test.pt"
+        base_path = os.path.dirname(os.path.abspath(__file__))  # 현재 파일의 절대 경로
+        self.model_path = os.path.join(base_path, "results", "ResNet2_test.pt")
+        # self.model_path = r"results\ResNet2_test.pt"
         self.DEVICE = "cuda" if torch.cuda.is_available() else "cpu"
         self.transform = transforms.Compose([
             transforms.Lambda(lambda x: x.convert('RGB')),
